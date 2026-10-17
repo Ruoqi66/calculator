@@ -1,0 +1,16 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< edu.nuist:caculator >-------------------------
+[INFO] Building CLI Calculator 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- spotbugs:4.8.6.6:spotbugs (default-cli) @ caculator ---
+[INFO] Fork Value is true
+[INFO] Done SpotBugs Analysis....
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.905 s
+[INFO] Finished at: 2026-10-10T00:33:14+08:00
+[INFO] ------------------------------------------------------------------------

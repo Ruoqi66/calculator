@@ -1,0 +1,11 @@
+RESULTS SUMMARY
+JDK: Oracle JDK 21.0.8; Maven 3.9.16; project target release 17.
+Final Maven clean verify: BUILD SUCCESS.
+JUnit: 12 run; 0 failures; 0 errors; 0 skipped.
+Packaged jar: caculator-1.0.0.jar; `java -jar ... 2 + 2` printed 4.0.
+JaCoCo Calculator class: 20/20 lines (100%); 15/17 branches (88.2%).
+JaCoCo whole project: 20/28 lines (71.4%); 15/19 branches (78.9%).
+SpotBugs: 0 findings. Maven Shade printed an overlapping META-INF/MANIFEST.MF warning.
+Observed failure 1: subtraction used addition; test expected -5.0 and got 11.0. Fixed.
+Observed failure 2: with the division guard removed, the zero-divisor tests failed because floating-point division returned infinity. Restored explicit ArithmeticException guard.
+Limitations: this environment did not expose IntelliJ or WPS native windows, so debugger interaction and screenshots could not be captured. The Word reports and project retain this limitation explicitly; no screenshot was fabricated.
