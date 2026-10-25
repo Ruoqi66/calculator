@@ -1,4 +1,4 @@
-name: CI Calculator
+name: Java Calculator CI
 
 on:
   push:
@@ -25,3 +25,9 @@ jobs:
 
       - name: Run JUnit tests
         run: mvn test
+
+      - name: Build and run unit tests
+        run: mvn clean verify
+
+      - name: Build Docker image
+        run: docker build -t calculator:ci .
