@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    restart: on-failure
+  web:
+    build: ./web
+    ports:
+      - "8000:80"
+    depends_on:
+      - backend
+    restart: on-failure
