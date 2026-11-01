@@ -1,14 +1,29 @@
+# Docker Compose file format version
+# Note: 'version' is deprecated in newer Compose versions but remains compatible
 version: "3.8"
+
+# Define all services that make up the multi-container application
 services:
+
+  # Backend calculation API service built from local Dockerfile
   backend:
+    # Build the backend image using the Dockerfile located in the ./backend directory
     build: ./backend
+    # Port mapping: host port 8080 maps to container port 8080
     ports:
       - "8080:8080"
+    # Restart policy: automatically restart the container only when it exits with a failure code
     restart: on-failure
+
+  # Frontend static web service served by Nginx
   web:
+    # Build the frontend image using the Dockerfile located in the ./web directory
     build: ./web
+    # Port mapping: host port 8000 maps to container port 80
     ports:
       - "8000:80"
+    # Startup dependency: the web service starts only after the backend container is created
     depends_on:
       - backend
+    # Restart policy: restart on failure to improve service availability
     restart: on-failure

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e01169a7-5e69-485b-bd65-2ed2dc08c8f4" name="更改" comment="fix ci: upgrade setup-java v5, set backend working dir, skip tests" />
+    <list default="true" id="e01169a7-5e69-485b-bd65-2ed2dc08c8f4" name="更改" comment="fix ci: upgrade setup-java v5, set backend working dir, skip tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/web/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +145,7 @@
       <workItem from="1793279200188" duration="435000" />
       <workItem from="1793280443389" duration="264000" />
       <workItem from="1793288599955" duration="3705000" />
-      <workItem from="1793513896736" duration="3272000" />
+      <workItem from="1793513896736" duration="4406000" />
     </task>
     <task id="LOCAL-00001" summary="Add Docker support for calculator">
       <option name="closed" value="true" />
