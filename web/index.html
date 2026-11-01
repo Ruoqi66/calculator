@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易计算器</title>
+    <style>
+        *{box-sizing:border-box}
+        body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#e0e7ff,#f8fafc);font-family:Arial,sans-serif;padding:20px}
+        .calculator{width:100%;max-width:340px;background:#171d2b;padding:24px;border-radius:24px;box-shadow:0 20px 50px #26325230}
+        h1{color:white;font-size:24px;margin:0 0 20px}
+        .display{height:100px;background:#252d3e;border-radius:14px;margin-bottom:18px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end;overflow:hidden}
+        #expression{color:#9ca3af;font-size:14px;min-height:20px}
+        #result{color:white;font-size:36px;max-width:100%;overflow-x:auto}
+        .keys{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+        button{height:56px;border:0;border-radius:12px;background:#2c3548;color:white;font-size:20px;cursor:pointer}
+        button:hover{filter:brightness(1.2)}
+        button:active{transform:scale(.96)}
+        .utility{background:#414b60}
+        .operator{background:#5968d9}
+        .equal{background:#818cf8;color:#111827}
+    </style>
+</head>
+<body>
+<main class="calculator">
+    <h1>简易计算器</h1>
+    <div class="display">
+        <div id="expression"></div>
+        <div id="result">0</div>
+    </div>
+    <div class="keys">
+        <button class="utility" data-action="clear">AC</button>
+        <button class="utility" data-action="sign">±</button>
+        <button class="utility" data-action="percent">%</button>
+        <button class="operator" data-op="/">÷</button>
+        <button data-num="7">7</button>
+        <button data-num="8">8</button>
+        <button data-num="9">9</button>
+        <button class="operator" data-op="*">×</button>
+        <button data-num="4">4</button>
+        <button data-num="5">5</button>
+        <button data-num="6">6</button>
+        <button class="operator" data-op="-">−</button>
+        <button data-num="1">1</button>
+        <button data-num="2">2</button>
+        <button data-num="3">3</button>
+        <button class="operator" data-op="+">+</button>
+        <button class="utility" data-action="backspace">⌫</button>
+        <button data-num="0">0</button>
+        <button data-num=".">.</button>
+        <button class="equal" data-action="equals">=</button>
+    </div>
+</main>
+<script src="js.js">
+
+</script>
+</body>
+</html>
